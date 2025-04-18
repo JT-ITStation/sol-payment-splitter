@@ -87,7 +87,7 @@ pub mod payment_splitter {
         Ok(())
     }
 
-    // Récupérer les fonds une fois le montant cible atteint
+    // Récupérer les fonds une fois le montant cible atteint JT
     pub fn claim_funds(ctx: Context<ClaimFunds>) -> Result<()> {
         let payment_request = &mut ctx.accounts.payment_request;
         
